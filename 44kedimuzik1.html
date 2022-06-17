@@ -1,0 +1,105 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+
+
+
+
+<html lang="ru" dir="ltr" data-cast-api-enabled="true">
+<head>
+    <title>3GP</title>
+    <link rel="canonical" href="">
+    <meta name="referrer" content="origin">
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            body, html, #player {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            #player {
+                position: relative;
+                background-color: black;
+            }
+
+            .player-msg {
+                position: absolute;
+                display: table;
+                background-color: black;
+                width: 100%;
+                height: 100%;
+            }
+
+                .player-msg .container {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+                    .player-msg .container .content {
+                        padding: 7em 0;
+                        text-align: center;
+                        width: 100%;
+                        background-color: gray;
+                    }
+
+            .fix-cookie-btn {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                z-index: 25;
+            }
+        </style>
+</head>
+<body>
+        <div id="player">
+            <div class="player-adslot player-element player-disabled"></div>
+            <div class="player-not-supported player-msg" style="visibility:hidden"><div class="container"><div class="content">Мы не можем воспроизвести видео на этом устройстве.</div></div></div>
+            <div class="player-no-flash player-msg" style="visibility:hidden"><div class="container"><div class="content">Пожалуйста, установите Flash player.</div></div></div>
+            <div class="player-embed" style="visibility:hidden"></div>
+            <video class="player-video" webkit-playsinline="1" playsinline="1" style="visibility:hidden"></video>
+            <video class="adplayer-video player-disabled" webkit-playsinline="1" playsinline="1" style="visibility:hidden"></video>
+            <object class="player-video" style="visibility:hidden" id="flashVideoPlayerContainer" name="flashVideoPlayerContainer" data="//myvi.ru/player/content/FlashChromeless.swf?r=21134">
+                <param name="movie" value="//myvi.ru/player/content/FlashChromeless.swf?r=21134" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="wmode" value="opaque" />
+            </object>
+        </div>
+        <script src="//www.myvi.tv/assets/libs/player/libs/bundle-core.min.js?r=21134"></script>
+        <script src="//myvi.ru/player/content/scripts/modern_loader.min.js?r=21134"></script>
+        <script>
+            createPlayer("v=https://www.vidlii.com/usfi/v/5YeuB0f-pOG.tUoj3cqAaJDMwnVc-arvy76I4Jtq8DTSr4V-jupS80BnH6Rm2GRtHw1EFMYMTjswQMJM8VGmk6rCwl0h.mp4\u0026tp=video%2fmp4\u0026i=ad9bfc8d-b23d-4243-82ec-03cc187c0d8d\u0026ld=true\u0026e=//video747.web1337.net/embed/44kedimuzik1.html\u0026t=44K+38.mp4\u0026p=https://www.vidlii.com//usfi/prvw/5YeuB0f-pOG.jpg\u0026d=720\u0026u=\u0026tn=Player\u0026ti=UA-1067932-5\u0026ec=VideoPlayer\u0026el=multiplikacia\u0026ci=17199490\u0026cg=multiplikacia\u0026hk=true", "//www.myvi.tv/assets/libs/player/", "https://www.myvi.ru/", "player", "false", "", "/player/embed/Cookies", "21134");
+        </script>
+            <script>
+                //liveinternet metrix
+                var img = new Image();
+                img.style.position = "absolute";
+                img.src = "//counter.yadro.ru/hit?r" + escape(document.referrer) +
+                    ((typeof (screen) == "undefined") ? "" :
+                    ";s" + screen.width + "*" + screen.height + "*" +
+                    (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) +
+                    ";uhttp%3a%2f%2fwww.myvi.ru;" + Math.random();
+                    document.body.appendChild(img);
+            </script>
+        <iframe src="//cstatic.weborama.fr/iframe/external_all.html" width="1" height="1" scrolling="no" style="position:absolute"></iframe>
+        <noscript>
+            <div class="player-msg">
+                <div class="container">
+                    <div class="content">
+                        <h1>Произошла ошибка.</h1>
+                        <div>Включите JavaScript в браузере.</div>
+                    </div>
+                </div>
+            </div>
+           
+        </noscript>
+            <noscript>
+                <img src="//counter.yadro.ru/hit?uhttp%3a%2f%2fwww.myvi.ru;rhttps%3a%2f%2fwww.myvi.ru%2f;694730244" width="1" height="1">
+            </noscript>
+</body>
+</html>
